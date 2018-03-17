@@ -4,8 +4,8 @@ services:
   # To be filled in further, if necessary
   app:
     build:
+      context: ./app
       dockerfile: Dockerfile
-      context: .
     links:
       - redis
       - answer
